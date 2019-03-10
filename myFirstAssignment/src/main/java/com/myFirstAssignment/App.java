@@ -13,6 +13,7 @@ public class App
     	ClassPathXmlApplicationContext context=new ClassPathXmlApplicationContext("bean.xml");
     	Coach coach=context.getBean("cricketCoach", Coach.class);
     	coach.doDailyWork();
+    	coach.getFortune();
     	context.close();
     }
 }

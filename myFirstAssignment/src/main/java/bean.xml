@@ -4,7 +4,11 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-	<bean id="cricketCoach"
-		class="com.myFirstAssignment.CricketCoach">
+	<bean id="cricketCoach" class="com.myFirstAssignment.CricketCoach">
+	      <constructor-arg ref="myFortune"></constructor-arg>
 	</bean>
+	<bean id="myFortune" class="com.myFirstAssignment.MyFortune">
+	
+	</bean>
+	
 </beans>
