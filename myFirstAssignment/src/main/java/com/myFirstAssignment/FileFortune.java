@@ -15,13 +15,13 @@ import org.springframework.stereotype.Component;
 @Component
 public class FileFortune implements FileFortuneService {
 
-	private String fileName = "C:/Users/LENOVO/Desktop/Remote/Assignment/myFirstAssignment/src/main/java/fortune.txt";
+	private String fileName = "src/main/java/fortune.txt";
 	private List<String> theFortunes;
 
 	// create a random number generator
 	private Random myRandom = new Random();
 	
-	@PostConstruct
+	@PostConstruct 
 	public void getFortuneIntoArray() {
 
 		File theFile = new File(fileName);
